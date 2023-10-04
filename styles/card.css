@@ -1,0 +1,85 @@
+/* START TAMANHO CARD */
+.card-class{
+    width: auto;
+    height: auto;
+    background-color: rgba(58, 58, 58, 0.815);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 7px 7px 0 0;
+    border: 1px solid grey;
+}
+.card-class-selecionado  {
+    background-color: rgb(138, 0, 252);
+
+}
+.card-class-selecionado p {
+    color: white;
+}
+/* CARD EDIT TEXTS */
+.card-l{
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    background-color: rgb(19, 19, 19);
+    border-radius: 7px 7px 0 0;
+    filter: blur(0.02em);
+
+}
+.p-card{
+    font-size: 80%;
+    margin: 2%;
+    color: rgb(112, 112, 112);
+    transition: color 0.5s ease-in-out;
+}
+.p-card:hover{
+    color: white;
+}
+.w-html p, .w-js p, .w-css p{
+    text-align: justify;
+    padding: 1%;
+}
+
+/* CARD POSITIONS */
+.container-cards{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: all 1s;
+}
+
+.w-html{
+    align-self:flex-start;
+    position: relative;
+}
+.w-js{
+    transform: translateY(-75%);
+    align-self:center;
+    position: relative;
+}
+.w-css{
+    transform: translateX(-20%) translateY(60%);
+    align-self: center;
+    position: relative;
+}
+.w-html::before, .w-js::before, .w-css::before{
+    top: -8.39em;
+    left: 7.88em;
+    content: " ";
+    width: 0.005em;
+    height: 8.4em;
+    background-color: rgb(138, 0, 252);
+    position: absolute;
+}
+.w-css::before{
+    top: -20.23em;
+    left: 10.45em; 
+    height: 20.4em;
+}
+.w-js::before{
+    top: -6.23em;
+    left: 7em; 
+    height: 6.16em;
+}

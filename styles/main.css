@@ -1,0 +1,179 @@
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    user-select: none;
+}
+
+.h1-tittle {
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    transition: color 0.5s ease-in-out;
+}
+.h1-tittle:hover{
+    color: rgb(138, 0, 252);
+
+}
+
+.p-text {
+    color: rgb(112, 112, 112);
+    transition: color 0.5s ease-in-out;
+    font-size: 100%;
+}
+.p-text:hover{
+    color: white;
+}
+
+
+/* PRIMEIRA SECTION */
+.container-first-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    width: 80%;
+    height: auto;
+    border-radius: 0.20em;
+    border: 1px solid transparent;
+    background-color: rgba(46, 46, 46, 0.815);
+    margin: 0.7em 0;
+    text-align: justify;
+    text-overflow: clip;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
+    gap: 1em;
+    transition: 0.5s ease-in-out;
+    padding: 3%;
+}
+
+.container-first-p p {
+    padding: 2%;
+}
+
+
+.container-first-p:hover {
+    border: 1px solid rgb(138, 0, 252);
+
+}
+/* END PRIMEIRA SECTION */
+
+
+/* STAR COMO ESTUDAR */
+
+.how-to {
+    position: relative;
+    display: inline-block;
+}
+
+.how-to::before,
+.how-to::after {
+    content: "";
+    position: absolute;
+    top: 0.65em;
+    width: 78%;
+    height: 0.005em;
+    background-color: rgb(138, 0, 252);
+    left: -8em;
+
+}
+
+.how-to::after {
+    left: initial;
+    right: -8em;
+}
+
+.container-elementos {
+    display: flex;
+    gap: 2em;
+    margin: 2em auto;
+}
+
+.elementos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid transparent;
+    border-radius: 0.2em;
+    background-color: rgba(46, 46, 46, 0.815);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
+    transition: all 0.7s ease-in-out;
+}
+
+.elementos:hover {
+    background-color: rgb(49, 49, 49);
+    box-shadow: 5px 10px 20px rgba(22, 22, 22, 0.582);
+    border: 1px solid rgb(138, 0, 252);
+}
+
+.elemento1 {
+    position: relative;
+}
+
+.elemento1::after {
+    content: " ";
+    width: 2em;
+    height: 1px;
+    position: absolute;
+    background-color: rgb(138, 0, 252);
+    top: 6em;
+    left: 12.5em;
+}
+
+.elemento3 {
+    position: relative;
+}
+
+.elemento3::after {
+    content: " ";
+    width: 2em;
+    height: 1px;
+    position: absolute;
+    background-color: rgb(138, 0, 252);
+    top: 6em;
+    right: 12.5em;
+}
+
+.img-icons {
+    display: block;
+    width: 5em;
+    transition: 0.7s ease-in-out;
+}
+
+.img-icons:hover {
+    width: 5.7em;
+    animation: animationIcon 2s;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(20px);
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-20%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+@keyframes animationIcon{
+    0%{
+        transform: rotateY(0deg);
+    }
+
+    50%{
+        transform: rotateZ(360deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}

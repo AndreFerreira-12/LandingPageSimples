@@ -1,0 +1,23 @@
+@media (min-width: 1920px) {
+    .container-first-p {
+        width: 90%;
+        height: auto;
+    }
+
+    .how-to::before,
+    .how-to::after {
+        content: "";
+        position: absolute;
+        top: 0.65em;
+        width: 140%;
+        height: 0.005em;
+        background-color: rgb(138, 0, 252);
+        left: -15em;
+    }
+
+    .how-to::after {
+        left: initial;
+        right: -15em;
+    }
+
+}
